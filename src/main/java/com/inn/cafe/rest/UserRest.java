@@ -10,6 +10,6 @@ import java.util.Map;
 @RequestMapping(path = "/user")
 public interface UserRest {
 
-    @PostMapping(path = "/singup")
+    @PostMapping(path = "/signup")
     public ResponseEntity<String> singUp(@RequestBody(required = true)Map<String, String> requestMap);
 }
